@@ -17,8 +17,6 @@ How do lagged air quality features from previous days (1, 2, and 3 days ago) imp
 
 We compared four models systematically:
 - **Baseline**: Weather features only (temperature, precipitation, wind speed, wind direction)
-- **+1 day lag**: Baseline + yesterday's PM2.5
-- **+1,2 day lags**: Baseline + PM2.5 from past 2 days
 - **+1,2,3 day lags**: Baseline + PM2.5 from past 3 days
 
 ## Results
