@@ -48,6 +48,52 @@ Air pollution doesn't change dramatically overnight. Yesterday's air quality is 
 
 The baseline model with only weather had negative R² because weather alone doesn't capture the persistence of pollution. Adding historical pollution data captures this temporal pattern and makes predictions much more accurate.
 
+### Model Comparison Visualizations
+
+#### Feature Importance Comparison
+
+<table>
+<tr>
+<td width="50%">
+
+**Baseline Model (Weather Only)**
+
+![Original Feature Importance](images/original_feature_importance.jpg)
+
+</td>
+<td width="50%">
+
+**Enhanced Model (With Lagged Features)**
+
+![Feature Importance with Lags](images/feature_importance.png)
+
+</td>
+</tr>
+</table>
+
+#### PM2.5 Prediction Comparison
+
+<table>
+<tr>
+<td width="50%">
+
+**Baseline Model Predictions**
+
+![Original PM2.5 Prediction](images/original_pm25_prediction.png)
+
+</td>
+<td width="50%">
+
+**Enhanced Model Predictions**
+
+![PM2.5 Prediction with Lags](images/pm25_hindcast.png)
+
+</td>
+</tr>
+</table>
+
+The visualizations clearly show how adding lagged features transforms the model's predictive capability and shifts feature importance toward historical pollution data.
+
 Detailed visualizations in `notebooks/airquality/6_lagged_features_analysis.ipynb`.
 
 ## System Architecture
